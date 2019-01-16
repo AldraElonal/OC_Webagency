@@ -76,27 +76,16 @@ header p
 
 
 
-.fleche_gauche
+.fleches
 {
-    position: relative;
-    text-align: left;
-    top : -275px;
-}
-
-.fleche_gauche i
-{
- color: white;
- font-size : 3em;
-}
-
-.fleche_droite
-{
+	display: flex;
+	justify-content: space-between;
     position: relative;
     text-align: right;
     vertical-align: center;
     top : -275px;
 }
-.fleche_droite i
+.fleches i
 {
 	
  	color: white;
