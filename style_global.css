@@ -50,10 +50,11 @@ header p
     clear: both;
     position: relative;
    
-    -webkit-transition: left 2s;
+    /*-webkit-transition: left 2s;
     -moz-transition: left 2s;
     -o-transition: left 2s;
     transition: left 2s;
+*/
 }
 
 .slider-image
@@ -76,12 +77,25 @@ header p
 
 
 
-.button-holder
+.fleche_gauche
 {
     position: relative;
-    top: -100px;
+    text-align: left;
+    top : -275px;
 }
 
+
+
+.fleche_droite
+{
+    position: relative;
+    text-align: right;
+    vertical-align: center;
+    top : -275px;
+
+
+}
+/*
 .slider-change
 {
     display: inline-block;
@@ -89,4 +103,4 @@ header p
     width: 10px;
     border-radius: 5px;
     background-color: brown;
-}
+}*/
