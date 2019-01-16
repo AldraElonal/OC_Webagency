@@ -50,11 +50,10 @@ header p
     clear: both;
     position: relative;
    
-    /*-webkit-transition: left 2s;
+    -webkit-transition: left 2s;
     -moz-transition: left 2s;
     -o-transition: left 2s;
     transition: left 2s;
-*/
 }
 
 .slider-image
@@ -84,7 +83,11 @@ header p
     top : -275px;
 }
 
-
+.fleche_gauche i
+{
+ color: white;
+ font-size : 3em;
+}
 
 .fleche_droite
 {
@@ -92,8 +95,12 @@ header p
     text-align: right;
     vertical-align: center;
     top : -275px;
-
-
+}
+.fleche_droite i
+{
+	
+ 	color: white;
+ 	font-size : 3em;
 }
 /*
 .slider-change
