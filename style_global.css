@@ -1,27 +1,36 @@
+
+nav 
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 10 px;
+}
+
+
+header ul
+{
+    display: flex;
+}
+
 header li
 {
 	list-style:none;
 	margin-left: 10px;
 }
-nav 
+
+
+header a
 {
-	display: flex;
-	justify-content: space-between;
+color : black;
+text-decoration: none;
 
 }
 
-
-
-header ul
+header a:hover
 {
-	display: flex;
-
+	text-decoration: underline;
 }
 
-header p
-{
-
-}
 
 #logo_flottant
 {
@@ -35,10 +44,9 @@ header p
     width: 1600px;
     height: 550px;
     background-color: yellow;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0px;
-    text-align: center;
     overflow: hidden;
 }
 
@@ -55,6 +63,8 @@ header p
     -o-transition: left 2s;
     transition: left 2s;
 }
+
+
 
 .slider-image
 {
@@ -75,28 +85,39 @@ header p
 }
 
 
-
 .fleches
 {
 	display: flex;
 	justify-content: space-between;
     position: relative;
-    text-align: right;
-    vertical-align: center;
+    color : gray;
     top : -275px;
 }
+
+.fleches a
+{    
+    background: gray;
+    color: gray;
+
+}
 .fleches i
-{
-	
+{   	 	
  	color: white;
  	font-size : 3em;
 }
-/*
-.slider-change
+
+
+.legendeBanniere
 {
-    display: inline-block;
-    height: 10px;
-    width: 10px;
-    border-radius: 5px;
-    background-color: brown;
-}*/
+    width : 500px;
+    position : relative;
+    top :-400px;
+    left : 100px;
+    color : white;
+
+}
+
+.legendeBanniere strong
+{
+    color : blue;
+}
