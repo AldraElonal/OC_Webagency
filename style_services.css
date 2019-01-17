@@ -1,0 +1,17 @@
+.titre_section
+{
+	text-align: center;
+}
+
+#Services
+{
+	display: flex;
+	justify-content: space-around;
+
+}
+
+#Services li
+{
+	list-s: #5CADD3;
+}
+
