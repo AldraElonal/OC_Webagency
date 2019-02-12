@@ -160,7 +160,7 @@ header button
 #services_presentation .fa-chart-line, .fa-cubes, .fa-chart-pie /*li span i*/
 {
     position:relative;
-    left:-26px;    
+    left:-1.3em;    
     padding : 12px;
     font-size: 1.2em;
     color:#5CADD3;
@@ -178,8 +178,8 @@ header button
 #services_presentation .fa-circle
 {
     position :relative;
-    left: -9px;
-    top: -28px;
+    left: -0.8em;
+    top: -3em;
     color:#5CADD3;
     font-size: 0.6em;
 }
