@@ -2,7 +2,9 @@
 body
 {
     width: 1600px;
-    margin : auto;
+    margin-top: 57px;
+    margin-left:auto;
+    margin-right: auto;
 }
 
 h1 span
@@ -57,6 +59,9 @@ header button
     background-color: #5CADD3;
     border-radius: 3px;
     border-bottom: 3px #468CAD solid;
+    border-top: 3px #5CADD3 solid;
+    border-right: 3px #5CADD3 solid;
+    border-left: 3px #5CADD3 solid;
 }
 
 #logo_flottant
@@ -415,6 +420,10 @@ header
         background-color: red;
     }
 
+    header nav
+    {
+        width:1024px;
+    }
     .image-holder
     {
         display: none;
@@ -448,23 +457,23 @@ header
  
     body
     {
-        width : auto;
+        width : 360px;
+        margin-top : 111px 
     }
 
     header 
     {
         background-color: yellow;
     }
-    header img
-    {
-        width:  261px;
-    }
+
     header nav
     {
+        width : 360px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     .image-holder
     {
         display: none;
@@ -537,6 +546,11 @@ header
         right:0px;
         padding:15px;
         background-color:#F1F6F8;
+    }
+
+    iframe 
+    {
+width:320px;
     }
 }
 
