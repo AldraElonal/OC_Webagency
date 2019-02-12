@@ -334,6 +334,14 @@ input, textarea
     display:block;
 }
 
+iframe
+{
+/* texte de style dans l'iframe 
+width="600" height="450" frameborder="0" style="border:0" allowfullscreen*/
+    width:600px;
+    height:450px;
+    border:0px;
+}
 /* changement de couleurs background pour meilleure visualisation des containers */
 
 #portfolio

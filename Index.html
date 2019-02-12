@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	<head>
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" href="style_global.css" />
@@ -11,7 +11,7 @@
 	<body>
 		<header>
 			<nav>
-				<img src="images/logo.png" title="Logo WebAgency" ></img> <!-- image flottante-->
+				<img src="images/logo.png" alt="Logo WebAgency" /> <!-- image flottante-->
 				
 				<ul> <!-- menu -->
 					<li><a href="#accueil">Accueil</a></li>
@@ -28,8 +28,8 @@
 		        <span id="slider-image-2"></span>
 		        
 		        <div class="image-holder">
-		            <img src="images/slider/bg1.jpg" class="slider-image" />
-		            <img src="images/slider/bg2.jpg" class="slider-image" />
+		            <img src="images/slider/bg1.jpg" class="slider-image" alt="Petite fille avec les mains pleines de peinture"/>
+		            <img src="images/slider/bg2.jpg" class="slider-image" alt="Petit garcon criant dans un mégaphone"/>
 		        </div>
 
 		        <div class="arrows">
@@ -53,7 +53,7 @@
 			<p>texte de présentation de la section</p>
 
 			<div id="services_presentation">
-				<img src="images/main-feature.png"/>
+				<img src="images/main-feature.png" alt="Un écran d'ordinateur">
 
 				<ul class="fa-ul">	
 					<li><span class="fa-li"><i class="fas fa-chart-line"></i></span>
@@ -87,7 +87,7 @@
 
 			<div id="portfolio_projects">
 				<figure>
-					<img src="images/portfolio/01.jpg"/>
+					<img src="images/portfolio/01.jpg" alt="Illustration du Projet 1"/>
 					<figcaption>
 						<i class="far fa-eye"></i>
 						<h3>Projet 1</h3>
@@ -96,7 +96,7 @@
 				</figure>
 				
 				<figure>
-					<img src="images/portfolio/02.jpg"/>
+					<img src="images/portfolio/02.jpg" alt="Illustration du Projet 2"/>
 					<figcaption>
 						<i class="far fa-eye"></i>
 						<h3>Projet 2</h3>
@@ -105,7 +105,7 @@
 				</figure>
 				
 				<figure>
-					<img src="images/portfolio/03.jpg"/>
+					<img src="images/portfolio/03.jpg" alt="Illustration du Projet 3"/>
 					<figcaption>
 						<i class="far fa-eye"></i>
 						<h3>Projet 3</h3>
@@ -114,7 +114,7 @@
 				</figure>
 				
 				<figure>
-					<img src="images/portfolio/04.jpg"/>
+					<img src="images/portfolio/04.jpg" alt="Illustration du Projet 4"/>
 					<figcaption>
 						<i class="far fa-eye"></i>
 						<h3>Projet 4</h3>
@@ -123,7 +123,7 @@
 				</figure>
 				
 				<figure>
-					<img src="images/portfolio/05.jpg"/>
+					<img src="images/portfolio/05.jpg" alt="Illustration du Projet 5"/>
 					<figcaption>
 						<i class="far fa-eye"></i>
 						<h3>Projet 5</h3>
@@ -132,7 +132,7 @@
 				</figure>
 				
 				<figure>
-					<img src="images/portfolio/06.jpg"/>
+					<img src="images/portfolio/06.jpg" alt="Illustration du Projet 6"/>
 					<figcaption>
 						<i class="far fa-eye"></i>
 						<h3>Projet 6</h3>
@@ -141,7 +141,7 @@
 				</figure>
 				
 				<figure>
-					<img src="images/portfolio/07.jpg"/>
+					<img src="images/portfolio/07.jpg" alt="Illustration du Projet 7"/>
 					<figcaption>
 						<i class="far fa-eye"></i>
 						<h3>Projet 7</h3>
@@ -150,7 +150,7 @@
 				</figure>
 				
 				<figure>
-					<img src="images/portfolio/08.jpg"/>
+					<img src="images/portfolio/08.jpg" alt="Illustration du Projet 8"/>
 					<figcaption>
 						<i class="far fa-eye"></i>
 						<h3>Projet 8</h3>
@@ -164,7 +164,7 @@
 <!-- Section Contacts -->
 
 		<section id="contact">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.221609680728!2d2.347636916053211!3d48.87305177928876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1549556744189" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.221609680728!2d2.347636916053211!3d48.87305177928876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1549556744189"></iframe>
 			<form method="post" action="traitement.php">
 				<h2>Contact info</h2>
 				<p><strong>WebAgency SAS</strong><br/>
@@ -175,7 +175,7 @@
 				<input type="text" name="Name" placeholder="Nom" required />
 				<input type="email" name="Email" placeholder="Email" required/>
 				<input type="text" name="Subject" placeholder="Objet" required/>
-				<textarea type="text" name="Message" placeholder="Message" rows="5" required /></textarea>
+				<textarea name="Message" placeholder="Message" rows="5" required></textarea>
 				<input type="submit" value="Envoyer"/>
 			</form>
 
