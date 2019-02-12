@@ -12,7 +12,7 @@ h1 span
 
 nav 
 {
-    margin: 10 px;
+    margin: 10px;
     display:flex;
     justify-content:space-around;    
 }
@@ -136,15 +136,16 @@ header button
 {
     display:flex;
     justify-content:space-around;
-    align-items: top;
+    align-items: flex-start;
+
 
 }
-
+/*
 #services_presentation img
 {
     max-height:auto;
 }
-
+*/
 #services_presentation ul
 {
     position: relative;
@@ -232,7 +233,7 @@ header button
     bottom : -12px;
     color : #468CAD;
     text-align: center;
-    font-size: 1em;v
+    font-size: 1em;
 }
 
 #portfolio .active_tab
