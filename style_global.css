@@ -154,15 +154,16 @@ header button
 
 #services_presentation li p
 {
-    margin-left: -0.8em;
+    margin-left: -0.6em;
 }
 
-#services_presentation li span i
+#services_presentation .fa-chart-line, .fa-cubes, .fa-chart-pie /*li span i*/
 {
     position:relative;
-    left:-30px;    
+    left:-26px;    
     padding : 12px;
     font-size: 1.2em;
+    color:#5CADD3;
     background-color: white;
     border-radius: 50px;
     border-color : #D7D7D7;
@@ -170,18 +171,22 @@ header button
     border-style:solid;
 }
 
+/*
 #services_presentation li p i
+*/
+
+#services_presentation .fa-circle
 {
     position :relative;
-    left: -10px;
-    top: -29px;
+    left: -9px;
+    top: -28px;
     color:#5CADD3;
     font-size: 0.6em;
 }
 
 /* positionnement différent du rond bleu pour le seo car icone chart pie un peu plus grande*/
-
-#services_presentation li p span i
+/*
+#services_presentation  p span i
 {
     position :relative;
     left: -21px;
@@ -191,10 +196,10 @@ header button
     background : none;
     border: none;
 }
-
+*/
 /* portfolio*/
 
-#portfolio i,#services i
+.fa-circle
 {
   color:#5CADD3;
   font-size:0.7em;
@@ -376,7 +381,7 @@ header
 
 
 /*affichage pour écrans moyens*/
-@media screen and (min-width: 1024px) and (max-width : 1600px)
+@media screen and (min-width: 1024px) and (max-width : 1599px)
 {
     
     body
