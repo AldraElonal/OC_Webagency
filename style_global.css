@@ -14,7 +14,19 @@ nav
 {
     margin: 10px;
     display:flex;
-    justify-content:space-around;    
+    justify-content:space-around; 
+    text-align: center;   
+}
+header nav
+{
+    width : 1600px;
+    position: fixed;
+    top:0px;
+    z-index: 1;
+    margin : auto;
+    background-color: white;
+    display: flex;
+    justify-content:space-around;
 }
 
 header ul
