@@ -1,123 +1,518 @@
 
-nav 
+body
 {
-    display: flex;
-    justify-content: space-around;
-    margin: 10 px;
+    width: 1600px;
+    margin : auto;
 }
 
+h1 span
+{
+    color : #5CADD3;
+}
+
+nav 
+{
+    margin: 10 px;
+    display:flex;
+    justify-content:space-around;    
+}
 
 header ul
 {
-    display: flex;
+    display:flex;
 }
 
 header li
 {
-	list-style:none;
-	margin-left: 10px;
+	margin-left:10px;
+    list-style:none;
 }
-
 
 header a
 {
-color : black;
-text-decoration: none;
-
+    color :black;
+    text-decoration:none;
 }
 
 header a:hover
 {
-	text-decoration: underline;
+	text-decoration:underline;
 }
 
+header button
+{
+    color : white;
+    background-color: #5CADD3;
+    border-radius: 3px;
+    border-bottom: 3px #468CAD solid;
+}
 
 #logo_flottant
 {
 	float:left;
 }
 
-
-
 .slider-holder
 {
-    width: 1600px;
-    height: 550px;
-    background-color: yellow;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
+    width:1600px;
+    height:550px;
+    margin-top:10px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:yellow;
+    overflow:hidden;
 }
 
 .image-holder
 {
     width: 3200px;
-    background-color: red;
-    height: 550px;
-    clear: both;
-    position: relative;
+    height:550px;
+    background-color:red;
+    clear:both;
+    position:relative;
    
-    -webkit-transition: left 2s;
-    -moz-transition: left 2s;
-    -o-transition: left 2s;
-    transition: left 2s;
+    -webkit-transition:left 2s;
+    -moz-transition:left 2s;
+    -o-transition:left 2s;
+    transition:left 2s;
 }
-
-
 
 .slider-image
 {
-    float: left;
-    margin: 0px;
-    padding: 0px;
-    position: relative;
+    float:left;
+    position:relative;
+    margin:0px;
+    padding:0px;    
 }
 
 #slider-image-1:target ~ .image-holder
 {
-    left: 0px;
+    left:0px;
 }
 
 #slider-image-2:target ~ .image-holder
 {
-    left: -1600px;
+    left:-1600px;
 }
 
-
-.fleches
+.arrows
 {
-	display: flex;
-	justify-content: space-between;
-    position: relative;
-    color : gray;
-    top : -275px;
+	position:relative;
+    top :-275px;
+    color :gray;
+    display:flex;
+	justify-content:space-between;
 }
 
-.fleches a
+.arrows a
 {    
-    background: gray;
-    color: gray;
-
+    color:gray;
+    background:gray;
 }
-.fleches i
+
+.arrows i
 {   	 	
- 	color: white;
- 	font-size : 3em;
+ 	color:white;
+ 	font-size:3em;
 }
 
-
-.legendeBanniere
+.banner_text
 {
-    width : 500px;
-    position : relative;
-    top :-400px;
-    left : 100px;
-    color : white;
-
+    width:550px;
+    position:relative;
+    top:-400px;
+    left:100px;
+    color:white;
 }
 
-.legendeBanniere strong
+.banner_text strong
 {
-    color : #5CADD3;
+    color:#5CADD3;
 }
+
+/* services*/
+
+#services_presentation
+{
+    display:flex;
+    justify-content:space-around;
+    align-items: top;
+
+}
+
+#services_presentation img
+{
+    max-height:auto;
+}
+
+#services_presentation ul
+{
+    position: relative;
+    left : -250px;
+    text-align: left;
+}
+
+#services_presentation li p
+{
+    margin-left: -0.8em;
+}
+
+#services_presentation li span i
+{
+    position:relative;
+    left:-30px;    
+    padding : 12px;
+    font-size: 1.2em;
+    background-color: white;
+    border-radius: 50px;
+    border-color : #D7D7D7;
+    border-width: 1px;
+    border-style:solid;
+}
+
+#services_presentation li p i
+{
+    position :relative;
+    left: -10px;
+    top: -29px;
+    color:#5CADD3;
+    font-size: 0.6em;
+}
+
+/* positionnement différent du rond bleu pour le seo car icone chart pie un peu plus grande*/
+
+#services_presentation li p span i
+{
+    position :relative;
+    left: -21px;
+    top: -34px;
+    color:#5CADD3;
+    font-size: 0.6em;
+    background : none;
+    border: none;
+}
+
+/* portfolio*/
+
+#portfolio i,#services i
+{
+  color:#5CADD3;
+  font-size:0.7em;
+
+}
+
+#portfolio, #services
+{
+    text-align: center;
+}
+
+#portfolio ul
+{
+    display:flex;
+    justify-content:center;
+
+}
+
+#portfolio li
+{
+    padding:10px;
+    list-style:none;
+    background-color: lightgray;
+}
+
+
+#portfolio li i
+{
+    position: absolute;
+    bottom : -12px;
+    color : #468CAD;
+    text-align: center;
+    font-size: 1em;v
+}
+
+#portfolio .active_tab
+{
+    position: relative;
+    color:white;
+    background-color:#5CADD3;
+    border-bottom: 3px #468CAD solid;
+    border-radius : 5px 0px 0px 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.last_tab
+{
+    border-radius : 0px 5px 5px 0px;
+}
+
+#portfolio_projects
+{
+    display:flex;
+    justify-content:space-around;
+    align-content:space-around;
+    flex-wrap:wrap;
+}
+
+#portfolio_projects figure
+{
+    width: 20%;
+    position: relative;
+    display:flex;
+}
+
+#portfolio_projects figure figcaption
+{
+    width:100%;
+    position:absolute;
+    bottom: 0px;
+    color:white;
+    text-align: left;
+    background-color: rgba(0,0,0,.4);
+    visibility: hidden;
+}
+
+#portfolio_projects figure:hover figcaption
+{
+    visibility: visible;
+}
+
+#portfolio div figure figcaption i
+{
+    position: absolute;
+    top:-1.3em;
+    right : 5px;    
+    padding : 10px;
+    color:white;
+    font-size: 0.8em;
+    background-color: #5CADD3;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: white;
+    border-width: 2px;
+}
+
+/* gestion affichage carte + formulaire de contact */
+
+#contact
+{
+    margin: 20px;
+    position:relative;
+    background-color: #5CADD3; 
+}
+
+#contact iframe
+{
+    width:100%;
+    opacity: 0.7;
+}
+
+#contact form
+{
+    width:250px;
+    position:absolute;
+    top:50px;
+    right:150px;
+    padding:15px;
+    background-color:#F1F6F8;
+}
+
+
+.bold
+{
+    font-weight:bold;
+}
+
+input, textarea
+{
+    margin-top: 5px;
+    display:block;
+}
+
+/* changement de couleurs background pour meilleure visualisation des containers */
+
+#portfolio
+{
+    background: yellow;
+}
+
+#portfolio_projects
+{
+    background: red;
+}
+
+#portfolio_projects figure
+{
+    background: green;
+}
+
+
+#portfolio_projects figure img
+{
+    background: pink;
+}
+
+#services
+{
+    background: pink;
+}
+
+header
+{
+    background: blue;
+}
+
+#services_presentation ul
+{
+
+    background-color: orange;
+}
+
+#services_presentation img
+{
+
+    background-color: orange;
+}
+
+
+/*affichage pour écrans moyens*/
+@media screen and (min-width: 1024px) and (max-width : 1600px)
+{
+    
+    body
+    {
+        width : 1024px;
+    }
+    
+        header 
+    {
+        background-color: red;
+    }
+
+    .image-holder
+    {
+        display: none;
+    }
+
+    .arrows
+    {
+        display: none;
+    }
+
+    .banner_text
+    {
+        height: auto;
+        width : auto;
+        position:relative;
+        top:0px;
+        left:0px;
+        text-align: center;
+    }
+
+    .slider-holder
+    {
+        height:auto;
+        width : auto;
+    }
+}
+
+/* affichage pour petits écrans */
+@media screen and (max-width: 1024px)
+{
+ 
+    body
+    {
+        width : auto;
+    }
+
+    header 
+    {
+        background-color: yellow;
+    }
+    header img
+    {
+        width:  261px;
+    }
+    header nav
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-holder
+    {
+        display: none;
+    }
+
+    .arrows
+    {
+        display: none;
+    }
+
+
+    .banner_text
+    {
+        height: auto;
+        width: auto;
+        position:relative;
+        top:0px;
+        left:0px;
+        text-align: center;
+    }
+
+    .slider-holder
+    {
+        height:auto;
+        width : auto;
+    }
+
+    #services  img
+    {
+        display: none;
+    }
+
+    #services_presentation ul
+    {
+        left : 0px;
+    }
+
+    #portfolio_projects
+    {
+        display:flex;
+        justify-content:space-around;
+        align-content:space-around;
+        flex-direction: column;
+        flex-wrap:nowrap;
+    }
+
+    #portfolio_projects figure figcaption
+    {
+        bottom: 0px;
+        visibility: visible;
+    }
+
+    #portfolio_projects figure
+    {
+        width : auto;
+        justify-content: center;
+
+    }
+
+    #portfolio_projects figure i
+    {
+        display: none;
+    }
+
+    #contact form
+    {
+        width:250px;
+        position:absolute;
+        top:50px;
+        right:0px;
+        padding:15px;
+        background-color:#F1F6F8;
+    }
+}
+
+
+
