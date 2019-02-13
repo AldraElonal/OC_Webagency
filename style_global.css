@@ -78,7 +78,6 @@ header button
     margin-top:10px;
     margin-left:auto;
     margin-right:auto;
-    background-color:yellow;
     overflow:hidden;
 }
 
@@ -366,7 +365,7 @@ width="600" height="450" frameborder="0" style="border:0" allowfullscreen*/
     border:0px;
 }
 /* changement de couleurs background pour meilleure visualisation des containers */
-
+/*
 #portfolio
 {
     background: yellow;
@@ -409,7 +408,7 @@ header
 
     background-color: orange;
 }
-
+*/
 
 /*affichage pour écrans moyens*/
 @media screen and (min-width: 1024px) and (max-width : 1599px)
@@ -419,16 +418,19 @@ header
     {
         width : 1024px;
     }
-    
+    /*
         header 
     {
         background-color: red;
     }
-
+*/
     header nav
     {
         width:1024px;
+        left: 50%;
+        margin-left: -512px;
     }
+
     .image-holder
     {
         display: none;
@@ -447,7 +449,6 @@ header
         top:0px;
         left:0px;
         color:black;
-        text-align: center;
     }
 
     .slider-holder
@@ -465,14 +466,13 @@ header
     {
         width : 360px;
         margin-top : 111px;
-        margin-left: auto;
     }
-
+/*
     header 
     {
         background-color: yellow;
     }
-
+*/
     header nav
     {
         width : 360px;
@@ -495,7 +495,7 @@ header
     .banner_text
     {
         height: auto;
-        width: auto;
+        width: 360px;
         position:relative;
         top:0px;
         left:0px;
@@ -506,7 +506,7 @@ header
     .slider-holder
     {
         height:auto;
-        width : auto;
+        width : 360px;
     }
 
     #services  img
@@ -549,7 +549,6 @@ header
     #contact form
     {
         width:250px;
-        margin:auto;
         position:absolute;
         top:50px;
         right:0px;
