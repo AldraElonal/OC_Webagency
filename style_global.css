@@ -2,7 +2,7 @@
 body
 {
     width: 1600px;
-    margin-top: 57px;
+    margin-top: 72px;
     margin-left:auto;
     margin-right: auto;
 }
@@ -14,6 +14,7 @@ h1 span
 
 nav 
 {
+    padding-bottom: 15px
     margin: 10px;
     display:flex;
     justify-content:space-around; 
@@ -23,7 +24,7 @@ header nav
 {
     width : 1600px;
     position: fixed;
-    top:0px;
+    top: 0px;
     z-index: 1;
     margin : auto;
     background-color: white;
@@ -55,6 +56,7 @@ header a:hover
 
 header button
 {
+    padding : 3px 5px 5px 5px;
     color : white;
     background-color: #5CADD3;
     border-radius: 3px;
@@ -116,21 +118,38 @@ header button
 {
 	position:relative;
     top :-275px;
-    color :gray;
     display:flex;
 	justify-content:space-between;
 }
-
+/*
 .arrows a
 {    
     color:gray;
-    background:gray;
+ 
 }
-
-.arrows i
+*/
+.fa-angle-left
 {   	 	
  	color:white;
- 	font-size:3em;
+ 	font-size:2em;
+       background:#434247;
+       border-radius:0px 35px 35px 0px;
+       padding-right: 0.5em;
+       padding-left: 0.2em;
+       padding-top: 0.5em;
+       padding-bottom: 0.5em;
+}
+
+.fa-angle-right
+{           
+    color:white;
+    font-size:2em;
+       background:#434247;
+       border-radius:35px 0px 0px 35px;
+       padding-right: 0.2em;
+       padding-left: 0.5em;
+       padding-top: 0.5em;
+       padding-bottom: 0.5em;
 }
 
 .banner_text
@@ -192,6 +211,11 @@ header button
 /*
 #services_presentation li p i
 */
+.fa-circle
+{
+  color:#5CADD3;
+  font-size:0.7em;
+}
 
 #services_presentation .fa-circle
 {
@@ -201,28 +225,9 @@ header button
     color:#5CADD3;
     font-size: 0.6em;
 }
-
-/* positionnement différent du rond bleu pour le seo car icone chart pie un peu plus grande*/
-/*
-#services_presentation  p span i
-{
-    position :relative;
-    left: -21px;
-    top: -34px;
-    color:#5CADD3;
-    font-size: 0.6em;
-    background : none;
-    border: none;
-}
-*/
 /* portfolio*/
 
-.fa-circle
-{
-  color:#5CADD3;
-  font-size:0.7em;
 
-}
 
 #portfolio, #services
 {
@@ -458,7 +463,8 @@ header
     body
     {
         width : 360px;
-        margin-top : 111px 
+        margin-top : 111px;
+        margin-left: auto;
     }
 
     header 
@@ -541,6 +547,7 @@ header
     #contact form
     {
         width:250px;
+        margin:auto;
         position:absolute;
         top:50px;
         right:0px;
