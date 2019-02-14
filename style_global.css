@@ -209,9 +209,8 @@ input[type=submit],header button
 
 #services_presentation p
 {
-    text-indent: -5px;
-    margin-left: -0.3em;
-    margin-top: 5px;
+    padding-left: 0px;
+    margin-top: -5px;
     margin-bottom: 30px;
 }
 
@@ -243,8 +242,8 @@ input[type=submit],header button
 #services_presentation .fa-circle
 {
     position :relative;
-    left: -1em;
-    top: -1.9em;
+    left: -2.3em;
+    top: -0.6em;
     color:#5CADD3;
     font-size: 0.6em;
 }
@@ -261,6 +260,7 @@ input[type=submit],header button
     margin-left: -40px;
     display:flex;
     justify-content:center;
+
 }
 
 #portfolio li
