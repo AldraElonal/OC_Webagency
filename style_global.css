@@ -9,6 +9,7 @@
     font-family:'Roboto';
     src: url('fonts/Roboto-Regular.ttf');
 }
+
 body
 {
     width: 1600px;
@@ -28,12 +29,10 @@ p
     font-size: 0.7em
 }
 
-
 h1 span
 {
     color : #5CADD3;
 }
-
 
 nav 
 {
@@ -144,24 +143,24 @@ input[type=submit],header button
 {   	 	
  	color:white;
  	font-size:2em;
-       background:#434247;
-       border-radius:0px 35px 35px 0px;
-       padding-right: 0.5em;
-       padding-left: 0.2em;
-       padding-top: 0.5em;
-       padding-bottom: 0.5em;
+   background:#434247;
+   border-radius:0px 35px 35px 0px;
+   padding-right: 0.5em;
+   padding-left: 0.2em;
+   padding-top: 0.5em;
+   padding-bottom: 0.5em;
 }
 
 .fa-angle-right
 {           
     color:white;
     font-size:2em;
-       background:#434247;
-       border-radius:35px 0px 0px 35px;
-       padding-right: 0.2em;
-       padding-left: 0.5em;
-       padding-top: 0.5em;
-       padding-bottom: 0.5em;
+    background:#434247;
+    border-radius:35px 0px 0px 35px;
+    padding-right: 0.2em;
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 .banner_text
@@ -187,10 +186,7 @@ input[type=submit],header button
     display:flex;
     justify-content:space-around;
     align-items: flex-start;
-
-
 }
-
 
 #services_presentation img
 {
@@ -202,7 +198,6 @@ input[type=submit],header button
 {
     margin-top: 150px;
     position: relative;
-  /*  left : -250px;*/
     text-align: left;
     width : 50%;
 }
@@ -238,6 +233,7 @@ input[type=submit],header button
 /*
 #services_presentation li p i
 */
+
 .fa-circle
 {
   color:#5CADD3;
@@ -252,8 +248,8 @@ input[type=submit],header button
     color:#5CADD3;
     font-size: 0.6em;
 }
-/* portfolio*/
 
+/* portfolio*/
 
 #portfolio, #services
 {
@@ -325,7 +321,6 @@ input[type=submit],header button
     background-color: rgba(0,0,0,.4);
     visibility: hidden;    
 }
-
 
 #portfolio_projects figure:hover figcaption
 {
@@ -451,12 +446,7 @@ header
     {
         width : 1024px;
     }
-    /*
-        header 
-    {
-        background-color: red;
-    }
-*/
+
     header nav
     {
         width:1024px;
@@ -466,11 +456,10 @@ header
 
     .slider-holder
     {
-        height:auto;
+        height:352px;
         width : 1024px;
         margin-top: 61px;
-    }
-    
+    }    
 
     .image-holder
     {
@@ -485,7 +474,7 @@ header
 
     .arrows
     {
-        top : 0px;
+        top:-180px;
     }
 
     .banner_text
@@ -542,7 +531,6 @@ header
     {
         display: none;
     }
-
 
     .banner_text
     {
