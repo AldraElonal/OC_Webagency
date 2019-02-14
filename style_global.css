@@ -23,6 +23,11 @@ h1,h2,h3,button,input[type=submit]
     font-family: 'Roboto-bold';
 }
 
+p
+{
+    font-size: 0.7em
+}
+
 
 h1 span
 {
@@ -48,6 +53,7 @@ header nav
     background-color: white;
     display: flex;
     justify-content:space-around;
+    align-items: center;
 }
 
 header ul
@@ -82,11 +88,6 @@ input[type=submit],header button
     border-top: 3px #5CADD3 solid;
     border-right: 3px #5CADD3 solid;
     border-left: 3px #5CADD3 solid;
-}
-
-#logo_flottant
-{
-	float:left;
 }
 
 .slider-holder
@@ -138,13 +139,7 @@ input[type=submit],header button
     display:flex;
 	justify-content:space-between;
 }
-/*
-.arrows a
-{    
-    color:gray;
- 
-}
-*/
+
 .fa-angle-left
 {   	 	
  	color:white;
@@ -171,11 +166,13 @@ input[type=submit],header button
 
 .banner_text
 {
-    width:550px;
+    font-size: 1.1em;
+    width:575px;
     position:relative;
-    top:-400px;
-    left:100px;
+    top:-450px;
+    left:200px;
     color:white;
+    font-family: 'Roboto-bold';
 }
 
 .banner_text strong
@@ -250,8 +247,8 @@ input[type=submit],header button
 #services_presentation .fa-circle
 {
     position :relative;
-    left: -0.8em;
-    top: -1.6em;
+    left: -1em;
+    top: -1.9em;
     color:#5CADD3;
     font-size: 0.6em;
 }
@@ -338,7 +335,6 @@ input[type=submit],header button
 #portfolio_projects figure figcaption h3,p
 {
     padding-left: 5px;
-
 }
 
 #portfolio div figure figcaption i
@@ -468,31 +464,50 @@ header
         margin-left: -512px;
     }
 
+    .slider-holder
+    {
+        height:auto;
+        width : 1024px;
+        margin-top: 61px;
+    }
+    
+
     .image-holder
     {
-        display: none;
+      width:2048px;
+      height: auto;
+    }
+
+    .image-holder img
+    {
+        width:1024px;
     }
 
     .arrows
     {
-        display: none;
+        top : 0px;
     }
 
     .banner_text
     {
+        font-family: 'Roboto-bold';
+        font-size: 0.7em;
+        width: 400px;
         height: auto;
-        width : auto;
         position:relative;
-        top:0px;
-        left:0px;
-        color:black;
+        top :-225px;
+        left: 150px;
+    }
+    .banner_text p
+    {
+        font-size: 0.9em;
     }
 
-    .slider-holder
+    #slider-image-2:target ~ .image-holder
     {
-        height:auto;
-        width : auto;
+        left:-1024px;
     }
+
 }
 
 /* affichage pour petits écrans */
