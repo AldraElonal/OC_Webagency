@@ -265,9 +265,9 @@ input[type=submit],header button
 
 #portfolio ul
 {
+    margin-left: -40px;
     display:flex;
     justify-content:center;
-
 }
 
 #portfolio li
