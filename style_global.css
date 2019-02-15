@@ -215,7 +215,7 @@ input[type=submit],header button
 }
 
 
-#services_presentation .fa-chart-line, .fa-cubes, .fa-chart-pie /*li span i*/
+#services_presentation .fa-chart-line, .fa-cubes, .fa-chart-pie
 {
     position:relative;
     left:-1.3em;    
@@ -309,6 +309,12 @@ input[type=submit],header button
     width: 20%;
     position: relative;
     display:flex;
+}
+
+#portfolio_projects figure img
+{
+    width: 100%;
+    height:100%;
 }
 
 #portfolio_projects figure figcaption
