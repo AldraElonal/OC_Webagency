@@ -20,9 +20,9 @@
 					<li><a href="#portfolio">Portfolio</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
-			</nav>
-
-			<!-- banniere slider-->
+			</nav>	
+		
+	<!-- banniere slider-->
 
 		    <div class="slider-holder">
 		        <span id="slider-image-1"></span>
@@ -47,14 +47,14 @@
 	            <a href="#slider-image-1"><i class="fas fa-angle-left"></i></a>
 	            <a href="#slider-image-2"><i class="fas fa-angle-right"></i></a>
 	        </div>
-	        
 		</header>
+		
 
 <!-- Section SERVICES -->
 		<section id="services">
 			<h2>NOS SERVICES</h2>
 			<!-- petite obule bleue -->
-			<i class="fas fa-circle"></i>
+			<hr><i class="fas fa-circle"></i>
 			<p>texte de présentation de la section</p>
 
 			<div id="services_presentation">
@@ -79,11 +79,11 @@
 <!-- Section PORTFOLIO -->
 		<section id="portfolio">
 			<h2>NOS PROJETS</h2>
-			<i class="fas fa-circle"></i>
+			<hr><i class="fas fa-circle"></i>
 			<p>texte de présentation de la section</p>
 			<nav>
 				<ul>
-					<li class="active_tab">All Works<i class="fas fa-caret-down"></i></li>
+					<li class="active_tab"><a>All Works</a><i class="fas fa-caret-down"></i></li>
 					<li>Creative</li>
 					<li>Corporate</li>
 					<li class="last_tab">Portfolio</li>
@@ -92,7 +92,7 @@
 
 			<div id="portfolio_projects">
 				<figure>
-					<img src="images/portfolio/01.jpg" alt="Illustration du Projet 1"/>
+					<img src="images/portfolio/01.jpg" alt="logo opticien"/>
 					<figcaption>
 						<i class="far fa-eye"></i>
 						<h3>Projet 1</h3>
@@ -100,7 +100,7 @@
 					</figcaption>
 				</figure>				
 				<figure>
-					<img src="images/portfolio/02.jpg" alt="Illustration du Projet 2"/>
+					<img src="images/portfolio/02.jpg" alt="logo magasin cadeau"/>
 					<figcaption>
 						<i class="far fa-eye"></i>
 						<h3>Projet 2</h3>
@@ -116,7 +116,7 @@
 					</figcaption>
 				</figure>
 				<figure>
-					<img src="images/portfolio/04.jpg" alt="Illustration du Projet 4"/>
+					<img src="images/portfolio/04.jpg" alt="logo cabinet architecte"/>
 					<figcaption>
 						<i class="far fa-eye"></i>
 						<h3>Projet 4</h3>
@@ -124,7 +124,7 @@
 					</figcaption>
 				</figure>
 				<figure>
-					<img src="images/portfolio/05.jpg" alt="Illustration du Projet 5"/>
+					<img src="images/portfolio/05.jpg" alt="logo Marque vetement Pompadour"/>
 					<figcaption>
 						<i class="far fa-eye"></i>
 						<h3>Projet 5</h3>
@@ -132,7 +132,7 @@
 					</figcaption>
 				</figure>
 				<figure>
-					<img src="images/portfolio/06.jpg" alt="Illustration du Projet 6"/>
+					<img src="images/portfolio/06.jpg" alt="logo agence voyages"/>
 					<figcaption>
 						<i class="far fa-eye"></i>
 						<h3>Projet 6</h3>
@@ -140,7 +140,7 @@
 					</figcaption>
 				</figure>
 				<figure>
-					<img src="images/portfolio/07.jpg" alt="Illustration du Projet 7"/>
+					<img src="images/portfolio/07.jpg" alt="Forum etudiants design "/>
 					<figcaption>
 						<i class="far fa-eye"></i>
 						<h3>Projet 7</h3>
@@ -161,22 +161,23 @@
 
 <!-- Section Contacts -->
 
-		<section id="contact">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.221609680728!2d2.347636916053211!3d48.87305177928876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1549556744189"></iframe>
-			<form method="post" action="traitement.php">
-				<h2>Contact info</h2>
-				<p><strong>WebAgency SAS</strong><br/>
-				25 Rue d'Hauteville 75010 Paris <br/>
-				Tel : 01 02 03 04 05	
-				</p>
+		<section id="contact">			
+			<div>			
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.221609680728!2d2.347636916053211!3d48.87305177928876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1549556744189"></iframe>
+				<form method="post" action="traitement.php">
+					<h2>Contact info</h2>
+					<p><strong>WebAgency SAS</strong><br/>
+					25 Rue d'Hauteville 75010 Paris <br/>
+					Tel : 01 02 03 04 05	
+					</p>
 
-				<input type="text" name="Name" placeholder="Nom" required />
-				<input type="email" name="Email" placeholder="Email" required/>
-				<input type="text" name="Subject" placeholder="Objet" required/>
-				<textarea name="Message" placeholder="Message" rows="5" required></textarea>
-				<input type="submit" value="Envoyer"/>
-			</form>
-
+					<input type="text" name="name" placeholder="Nom" required />
+					<input type="email" name="email" placeholder="Email" required/>
+					<input type="text" name="subject" placeholder="Objet" required/>
+					<textarea name="message" placeholder="Message" rows="5" required></textarea>
+					<input type="submit" value="Envoyer"/>
+				</form>
+			</div>
 		</section>
 	</body>
 </html>
