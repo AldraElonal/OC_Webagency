@@ -16,12 +16,12 @@ body
     margin-top: 81px;
     margin-left:auto;
     margin-right: auto;
-    font-family: 'Roboto';
+    font-family: 'Roboto' , sans-serif;
 }
 
 h1,h2,h3,button,input[type=submit]
 {
-    font-family: 'Roboto-bold';
+    font-family: 'Roboto-bold', sans-serif;
 }
 
 p
@@ -29,76 +29,14 @@ p
     font-size: 0.7em
 }
 
+
+
 hr
 {position: relative;
     top : 1.25em;
     width : 25%;
     color: #D7D7D7;
     z-index: -1;
-}
-h1 span
-{
-    color : #5CADD3;
-}
-
-nav 
-{
-    padding-bottom: 15px;
-    margin: 10px;
-    display:flex;
-    justify-content:space-around; 
-    text-align: center;   
-}
-header nav
-{
-    width : 1600px;
-    position: fixed;
-    height: 86px;
-    top: 0px;
-    z-index: 1;
-    margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-
-}
-
-header img
-{
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-header ul
-{
-    display:flex;
-    margin-top: 0px
-    margin-bottom: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    height: 100%;
-
-}
-
-header li
-{
-	margin-left:10px;
-    list-style:none;
-    padding-top: 30px;
-}
-
-header a
-{
-    color :black;
-    text-decoration:none;
-}
-
-header li:hover
-{
-	border-top: 3px #5CADD3 solid;
 }
 
 input[type=submit],header button
@@ -113,13 +51,100 @@ input[type=submit],header button
     border-left: 3px #5CADD3 solid;
 }
 
+/* padding et margin pour que les liens mènent au début de la section, malgrès le header nav  en fixed */
+#accueil, #services,#portfolio, #contact
+{
+    padding-top: 81px;
+    margin-top: -81px;
+}
+
+#portfolio, #services
+{
+    text-align: center;
+}
+
+.fa-circle
+{
+    color:#5CADD3;
+    font-size:0.7em;
+}
+
+nav
+{
+    display:flex;
+    justify-content:space-around;
+    text-align: center;
+}
+
+h1 span
+{
+    color : #5CADD3;
+}
+
+header{
+    margin-bottom: 0;
+}
+
+header nav
+{
+    width : 1600px;
+    position: fixed;
+    height: 81px;
+    top: 0;
+    z-index: 1;
+    margin : 0 auto;
+    background-color: white;
+    align-items: center;
+}
+
+header img
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header ul
+{
+    display:flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 100%;
+
+}
+
+header li
+{
+	margin-left:10px;
+    list-style:none;
+    padding-top: 30px;
+    height: 100%;
+}
+
+header li a
+{
+    text-decoration: none;
+    color: black;
+}
+
+
+header li a:hover
+{
+
+    border-top: 3px #5CADD3 solid;
+    padding : 27px 0 0 0;
+}
+
+
+
 .slider-holder
 {
+    position:relative;
+    top: 20px;
     width:1600px;
     height:550px;
-    margin-top:10px;
-    margin-left:auto;
-    margin-right:auto;
+    margin : 10px auto 0 auto;
     overflow:hidden;
 }
 
@@ -127,13 +152,9 @@ input[type=submit],header button
 {
     width: 3200px;
     height:550px;
-    background-color:red;
     clear:both;
     position:relative;
    
-    -webkit-transition:left 2s;
-    -moz-transition:left 2s;
-    -o-transition:left 2s;
     transition:left 2s;
 }
 
@@ -141,18 +162,35 @@ input[type=submit],header button
 {
     float:left;
     position:relative;
-    margin:0px;
-    padding:0px;    
+    margin:0;
+    padding:0;
 }
 
 #slider-image-1:target ~ .image-holder
 {
-    left:0px;
+    left:0;
 }
 
 #slider-image-2:target ~ .image-holder
 {
     left:-1600px;
+}
+
+.banner_text
+{
+    font-size: 1.1em;
+    width:575px;
+
+    position:relative;
+    top:-450px;
+    left:200px;
+    color:white;
+    font-family: 'Roboto-bold', sans-serif;
+}
+
+.banner_text strong
+{
+    color:#5CADD3;
 }
 
 .arrows
@@ -168,11 +206,8 @@ input[type=submit],header button
     color:white;
     font-size:2em;
     background:#434247;
-    border-radius:0px 35px 35px 0px;
-    padding-right: 0.5em;
-    padding-left: 0.2em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    border-radius:0 35px 35px 0;
+    padding: 0.5em 0.5em 0.5em 0.2em;
 }
 
 .fa-angle-right
@@ -180,34 +215,10 @@ input[type=submit],header button
     color:white;
     font-size:2em;
     background:#434247;
-    border-radius:35px 0px 0px 35px;
-    padding-right: 0.2em;
-    padding-left: 0.5em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-}
+    border-radius:35px 0 0 35px;
+    padding: 0.5em 0.2em 0.5em 0.5em;
 
-.banner_text
-{
-    font-size: 1.1em;
-    width:575px;
-    position:relative;
-    top:-450px;
-    left:200px;
-    color:white;
-    font-family: 'Roboto-bold';
 }
-
-.banner_text strong
-{
-    color:#5CADD3;
-}
-#accueil, #services,#portfolio, #contact
-{
-    padding-top: 81px;
-    margin-top: -81px;
-}
-
 
 /* services*/
 
@@ -220,8 +231,7 @@ input[type=submit],header button
 
 #services_presentation img
 {
-   width:50%;
-
+    max-width: 50%;
 }
 
 #services_presentation ul
@@ -234,18 +244,18 @@ input[type=submit],header button
 
 #services_presentation h3
 {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 #services_presentation p
 {
-    padding-left: 0px;
+    padding-left: 0;
     margin-top: -5px;
     margin-bottom: 30px;
 }
 
 
-#services_presentation .fa-chart-line, .fa-cubes, .fa-chart-pie
+ .fa-chart-line, .fa-cubes, .fa-chart-pie
 {
     position:relative;
     left:-1.3em;    
@@ -259,15 +269,6 @@ input[type=submit],header button
     border-style:solid;
 }
 
-/*
-#services_presentation li p i
-*/
-
-.fa-circle
-{
-  color:#5CADD3;
-  font-size:0.7em;
-}
 
 #services_presentation .fa-circle
 {
@@ -279,10 +280,9 @@ input[type=submit],header button
 }
 
 /* portfolio*/
-
-#portfolio, #services
+#portfolio
 {
-    text-align: center;
+    margin-bottom: 20px;
 }
 
 #portfolio ul
@@ -293,19 +293,18 @@ input[type=submit],header button
 
 }
 
-
-
 #portfolio li
 {
     padding:10px;
     list-style:none;
     background-color: lightgray;
 }
+
 #portfolio li:hover
 {
     cursor:pointer;
-    background-color: #5CADD3;
-    border-bottom: 3px #468CAD solid;
+    background-color: #62cff5;
+    border-bottom: 3px #4bacce solid;
     color:white;
 }
 
@@ -325,14 +324,14 @@ input[type=submit],header button
     color:white;
     background-color:#5CADD3;
     border-bottom: 3px #468CAD solid;
-    border-radius : 5px 0px 0px 5px;
+    border-radius : 5px 0 0 5px;
     display: flex;
     justify-content: center;
 }
 
 .last_tab
 {
-    border-radius : 0px 5px 5px 0px;
+    border-radius : 0 5px 5px 0;
 }
 
 #portfolio_projects
@@ -360,7 +359,7 @@ input[type=submit],header button
 {
     width:100%;
     position:absolute;
-    bottom: 0px;
+    bottom: 0;
     color:white;
     text-align: left;
     background-color: rgba(0,0,0,.4);
@@ -397,9 +396,9 @@ input[type=submit],header button
 #contact
 {
 
-    margin-left: : 20px;
-    margin-right: : : 20px;
-    margin-bottom: : : 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
     position:relative;
 
 }
@@ -421,7 +420,7 @@ input[type=submit],header button
     position:absolute;
     top:131px;
     right:150px;
-    padding: 0px 15px 15px 15px;  
+    padding: 0 15px 15px 15px;
     background-color:#F1F6F8;
 }
 
@@ -438,7 +437,8 @@ input, textarea
     margin-top: 5px;
     display:block;
     width:100%;
-    font-family: 'Roboto';
+    font-size : 0.9em;
+    font-family: 'Roboto', sans-serif;
 }
 
 iframe
@@ -447,7 +447,7 @@ iframe
 width="600" height="450" frameborder="0" style="border:0" allowfullscreen*/
     width:600px;
     height:450px;
-    border:0px;
+    border:0;
 }
 
 .bold
@@ -455,146 +455,236 @@ width="600" height="450" frameborder="0" style="border:0" allowfullscreen*/
     font-weight:bold;
 }
 
-/* changement de couleurs background pour meilleure visualisation des containers */
-/*
-#portfolio
+
+
+
+
+/* affichage pour petits écrans*/
+
+@media screen and (min-width: 960px) and (max-width: 1600px)
 {
-    background: yellow;
-}
-
-#portfolio_projects
-{
-    background: red;
-}
-
-#portfolio_projects figure
-{
-    background: green;
-}
-
-
-#portfolio_projects figure img
-{
-    background: pink;
-}
-
-#services
-{
-    background: pink;
-}
-
-header
-{
-    background: blue;
-}
-
-#services_presentation ul
-{
-
-    background-color: orange;
-}
-
-#services_presentation img
-{
-
-    background-color: orange;
-}
-*/
-
-/*affichage pour écrans moyens*/
-@media screen and(min-width: 540px) and (max-width : 960px)
-{
+    
     
     body
     {
-        width : 540px;
+        width : 80%;
     }
 
     header nav
     {
-        width:540px;
-        left: 50%;
-        margin-left: -512px;
+        width:80%;
+        background:white;
+        justify-content: space-around;
+    }
+
+    header ul
+    {
+        margin-right : 20px;
+        margin-left: -40px;
     }
 
     .slider-holder
     {
-        height:352px;
-        width : 540;
-        margin-top: 61px;
+        height:auto;
+        width : 100%;
     }    
 
-    .image-holder
+     .image-holder
     {
-      width:1080px;
-      height: auto;
+      width : 200%;
+      height: 100%;
     }
-
     .image-holder img
     {
-        width:540px;
+      width : 50%;
+      height: 100%;
     }
+
 
     .arrows
     {
-        top:-180px;
+        top:-200px;
     }
 
     .banner_text
     {
-        font-family: 'Roboto-bold';
+        font-family: 'Roboto-bold', sans-serif;
         font-size: 0.7em;
-        width: 400px;
-        height: auto;
+        width: 50%;
+        max-height : 200px;
         position:relative;
-        top :-225px;
-        left: 150px;
+        top :-200px;
+        left: 50px;
     }
     .banner_text p
     {
-        font-size: 0.9em;
+        font-size: 1.1em;
     }
 
     #slider-image-2:target ~ .image-holder
     {
-        left:-540px;
+        left:-100%;
+    }
+    
+    #services_presentation ul
+    {
+        margin-top: 50px;
     }
 
+    #portfolio_projects figure
+    {
+        width : 30%;
+        margin-left: 1px;
+        margin-right: 1px;
+        background-color: red;
+    }
+    #contact form
+    {
+    right: 150px;
+    }
+}
+
+
+
+/*affichage pour tablette*/
+@media screen and (min-width: 540px) and (max-width: 960px)
+{
+    
+    
+    body
+    {
+        width : 100%;
+    }
+
+    header nav
+    {
+        width:100%;
+        background:white;
+        justify-content: space-between;
+    }
+
+    header ul
+    {
+        margin-right : 20px;
+        margin-left: -40px;
+    }
+
+    .slider-holder
+    {
+        height:auto;
+        width : 100%;
+    }    
+
+  .image-holder
+    {
+      width : 200%;
+      height: 100%;
+    }
+    .image-holder img
+    {
+      width : 50%;
+      height: 100%;
+    }
+
+    .arrows
+    {
+        top:-150px;
+    }
+
+    .banner_text
+    {
+        font-family: 'Roboto-bold', sans-serif;
+        font-size: 0.7em;
+        width: 50%;
+        height: 150px;
+        position:relative;
+        top :-175px;
+        left: 50px;
+    }
+    .banner_text p
+    {
+        font-size: 1.1em;
+    }
+
+    #slider-image-2:target ~ .image-holder
+    {
+        left:-100%;
+    }
+
+    #services_presentation ul
+    {
+        margin-top: 10px;
+    }
+
+    #portfolio_projects figure
+    {
+                width : 45%;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+    #portfolio_projects figure figcaption
+    {
+        visibility: visible;
+    }
+    #contact form
+    {
+    right: 50px;
+    }
 }
 
 /* affichage pour petits écrans */
-@media screen and (max-width: 539px)
+@media screen and (max-width: 540px)
 {
  
     body
     {
-overflow-y: unset;
+        
         width : auto;
         margin-top : 111px;
     }
-/*
-    header 
-    {
-        background-color: yellow;
-    }
-*/
+header{
+    margin-bottom: 10px;
+}
+
     header nav
     {
-        width : 540px;
+        width : 100%;
+        height: 130px;
         left:50%;
-        margin-left: -270px;
+        margin-left: -50%;
         flex-direction: column;
         justify-content: center;
+        overflow-y: hidden;
     }
-header ul
-{
-        margin-left: -40px;
-}
+
+    header ul
+    {
+            margin-left: -40px;
+
+    }
+
+    header li
+    {
+        margin-bottom: 10px;
+    }
+
     .image-holder
+    {
+      width : 100%;
+      height: 100%;
+    }
+    .image-holder img
+    {
+      width : 100%;
+      height: 100%;
+      margin-bottom: 10px;
+    }
+
+    .image_not_for_mobile
     {
         display: none;
     }
-
     .arrows
     {
         display: none;
@@ -605,16 +695,23 @@ header ul
         height: auto;
         width: auto;
         position:relative;
-        top:0px;
-        left:0px;
+        left:0;
+        top:0;
         color:black;
         text-align: center;
     }
 
     .slider-holder
     {
-        height:auto;
-        width : screen.width;
+        height:100%;
+        width: 100%;
+    }
+
+
+    #accueil, #services,#portfolio, #contact
+    {
+        padding-top: 120px;
+        margin-top: -120px;
     }
 
     #services  img
@@ -622,13 +719,16 @@ header ul
         display: none;
     }
 
+
+
     #services_presentation ul
     {
-        left : 0px;
-        margin-top: 0px;
+        left : 0;
+        margin-top: 0;
+        top: 10px;
     }
 
-    #portfolio_projects
+    #portfolio_project
     {
         display:flex;
         justify-content:space-around;
@@ -639,7 +739,7 @@ header ul
 
     #portfolio_projects figure figcaption
     {
-        bottom: 0px;
+        bottom: 0;
         visibility: visible;
     }
 
@@ -659,8 +759,8 @@ header ul
     {
         width:auto;
         position:relative;
-        top:00px;
-        right:0px;
+        top:0;
+        right:0;
         padding:15px;
         background-color:#F1F6F8;
     }
@@ -669,7 +769,5 @@ header ul
     {
         display: none;
     }
+    
 }
-
-
-
